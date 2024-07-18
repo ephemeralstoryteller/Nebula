@@ -86,3 +86,6 @@
 
 	/// Organ instances that should report info to Stat().
 	var/list/stat_organs
+
+	/// Should this mob subscribe to the weather system for periodic weather effects?
+	var/weather_sensitive = FALSE
