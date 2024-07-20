@@ -62,6 +62,9 @@
 	/// (FLOAT) world.time of last on_reagent_update call, used to prevent recursion due to reagents updating reagents
 	VAR_PRIVATE/_reagent_update_started = 0
 
+	/// (BOOL) Does this atom respond to changes in local temperature via the `temperature` var?
+	var/temperature_sensitive = FALSE
+
 /atom/proc/get_max_health()
 	return max_health
 
